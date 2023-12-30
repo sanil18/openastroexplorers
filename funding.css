@@ -1,0 +1,313 @@
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.navbar {
+    background-color: #2e3e4e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nav-links a:hover {
+    color: #ff5733; 
+    transition: color 0.3s; 
+}
+
+
+.search-bar {
+    text-align: center;
+    margin: 20px 0;
+}
+
+#project-search {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#search-button {
+    background-color: #2e3e4e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+.bio-section {
+    background-color: #fff;
+    padding: 30px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+
+.project {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    text-align: center; 
+}
+
+.project img {
+    width: 180px; 
+    height: auto; 
+    border-radius: 10px;
+    margin-bottom: 20px; 
+}
+
+.project h3 {
+    font-size: 20px; 
+    margin: 10px 0;
+    color: #333; 
+}
+
+.project p {
+    font-size: 16px; 
+    margin: 10px 0;
+    color: #000000; 
+}
+
+
+.donate-button {
+    background-color: #ff5733; 
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s; 
+    text-transform: uppercase; 
+}
+
+
+.donate-button:hover, .donate-button:focus, .donate-button:active {
+    text-decoration: none;
+}
+
+
+.donate-button:hover {
+    background-color: #e63517; 
+}
+
+
+footer {
+    text-align: center;
+    background-color: #2e3e4e;
+    color: #fff;
+    padding: 10px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-links ul {
+        flex-direction: column;
+    }
+    
+    .nav-links li {
+        margin-bottom: 10px;
+    }
+
+    .search-bar {
+        flex-direction: column;
+    }
+
+    #project-search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+
+.nav-links a:hover {
+    color: #ff5733; 
+    transition: color 0.3s; 
+}
+
+#projects-dropdown {
+    position: relative;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    border-radius: 4px;
+    width: 150px;
+    text-align: center;
+}
+
+#projects-dropdown:hover #dropdown-menu {
+    display: block;
+}
+
+#dropdown-menu li {
+    margin: 0;
+}
+
+#dropdown-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+#dropdown-menu a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 0;
+}
+
+
+
+#projects-dropdown #dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#projects-dropdown:hover #dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+
+.user-actions-message {
+    background-color: #f8f8f8;
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    margin: 20px auto; 
+    max-width: 600px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.user-actions-message p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+
+.blurred-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/pexels-dana-tentis-370799.jpg"); 
+    background-size: cover;
+    filter: blur(10px); 
+    z-index: 1;
+    display: none; 
+}
+
+
+#notice-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(194, 16, 16, 0.9); 
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    display: none; 
+}
+
+.notice-box h2 {
+    font-size: 24px;
+    color: #1e1e1e; 
+}
+
+.notice-box p {
+    font-size: 16px;
+    color: #ffffff; 
+    margin-bottom: 20px;
+}
+
+#notice-ok-btn {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#notice-ok-btn:hover {
+    background-color: #0056b3; 
+}

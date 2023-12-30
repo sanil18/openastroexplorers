@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="navbar">
+        <a class="logo" href="#">OpenAstro Explorers</a>
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li id="projects-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                    <a href="#">Projects</a>
+                    <ul id="dropdown-menu" class="dropdown-menu">
+                        <li><a href="project.html">View Projects</a></li>
+                        <li><a href="create.html">Create Your Own</a></li>
+                    </ul>
+                </li>
+                <li><a href="funding.html">Funding</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="sorry.html">Login/Register</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>About Us</h1>
+        <section>
+            <p>Welcome to OpenAstro Explorers, your cosmic gateway to exploration and discovery.</p>
+        </section>
+        <section>
+            <p>At OpenAstro Explorers, we are a passionate and diverse community of space enthusiasts, scientists,
+                researchers, educators, students, and inquisitive minds, all driven by a shared mission: to democratize
+                the marvels of space exploration and make them accessible to people from all walks of life.</p>
+        </section>
+        <section>
+            <h2>Our mission is clear:</h2>
+            <ul>
+                <li>To create a vibrant hub where collaboration knows no boundaries,</li>
+                <li>Transparency guides our way,</li>
+                <li>Innovation soars to new heights, and</li>
+                <li>Education ignites the spark of curiosity.</li>
+            </ul>
+            <p>Together, we aspire to unravel the secrets of the cosmos and share the breathtaking beauty of space science
+                with the world.</p>
+        </section>
+        <section>
+            <h2>What Sets Us Apart:</h2>
+            <ul>
+                <li><strong>Inclusivity:</strong> We believe that the wonders of the universe belong to everyone, and we are
+                    dedicated to creating an inclusive space where all can participate, regardless of their background or
+                    expertise.</li>
+                <li><strong>Collaboration:</strong> OpenAstro Explorers serves as a dynamic hub where individuals with diverse
+                    interests and skills converge to embark on collaborative space science projects that push the boundaries
+                    of knowledge.</li>
+                <li><strong>Transparency:</strong> We champion transparency and openness in all our endeavors, ensuring that
+                    scientific discoveries and findings are readily accessible and comprehensible to everyone.</li>
+                <li><strong>Innovation:</strong> We are committed to fostering innovation, nurturing groundbreaking ideas, and
+                    propelling space exploration to new frontiers through the power of collective imagination.</li>
+                <li><strong>Education:</strong> Our platform offers a wealth of educational resources that aim to inspire,
+                    educate, and engage, making the wonders of space accessible and exciting for learners of all ages.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Join Our Cosmic Journey:</h2>
+            <p>OpenAstro Explorers is more than just a platform; it is a vibrant community of like-minded individuals on a
+                mission to bring the grandeur of the universe closer to home. As we explore distant galaxies, study celestial
+                phenomena, and reach for the stars, we invite you to join us on this exhilarating cosmic journey.</p>
+            <p>Together, we can transform the cosmos into an open playground for exploration, discovery, and wonder. Come be a
+                part of our ever-expanding universe of knowledge and imagination. Join OpenAstro Explorers and let's explore
+                the cosmos together!</p>
+        </section>
+    </div>
+
+    <script>
+        function showDropdown() {
+            var dropdownMenu = document.getElementById("dropdown-menu");
+            dropdownMenu.style.display = "block";
+        }
+
+        function hideDropdown() {
+            var dropdownMenu = document.getElementById("dropdown-menu");
+            dropdownMenu.style.display = "none";
+        }
+    </script>
+    <footer>
+        <p>&copy; Copyright 2023 | OpenAstro Explorers</p>
+    </footer>
+</body>
+</html>

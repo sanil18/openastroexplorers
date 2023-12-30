@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Create Projects</title>
+    <link rel="stylesheet" href="create.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="navbar">
+        <a class="logo" href="#">OpenAstro Explorers</a>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="project.html">View Project</a></li>
+                 <li><a href="create.html">Create Your Own</a></li>
+                <li><a href="funding.html">Funding</a></li>
+                <li><a href="resources.css">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sorry.html">Login/Register</a></li>
+            </ul>
+        </div>        
+</div>  
+
+   
+    
+<div id="welcome-section" style="text-align: center; max-width: 600px; margin: 0 auto; padding: 20px;">
+    <h1>Create a Project</h1>
+    <p>This will be the section where users can create their own projects. We will have a panel of experts who will review the projects, and if approved, the project will be displayed in the projects section.</p>
+</div>
+
+
+    <main>
+        <form action="process_project.php" method="post" enctype="multipart/form-data">
+            <label for="projectName">Project Name:</label>
+            <input type="text" id="projectName" name="projectName" required>
+
+            <label for="projectDescription">Project Description:</label>
+            <textarea id="projectDescription" name="projectDescription" rows="4" required></textarea>
+
+            <label for="category">Category:</label>
+            <select id="category" name="category" required>
+                <option value="Space Exploration">Space Exploration</option>
+                <option value="Astronomy">Astronomy</option>
+                <option value="Earth Science">Earth Science</option>
+               
+            </select>
+
+            <label for="tags">Tags (comma-separated):</label>
+            <input type="text" id="tags" name="tags">
+
+            <label for="skillsRequired">Skills Required (comma-separated):</label>
+            <input type="text" id="skillsRequired" name="skillsRequired">
+
+            <label for="timeCommitment">Expected Time Commitment:</label>
+            <input type="text" id="timeCommitment" name="timeCommitment">
+
+            <label for="projectPrivacy">Privacy:</label>
+            <input type="radio" id="public" name="projectPrivacy" value="Public" required>
+            <label for="public">Public</label>
+            <input type="radio" id="private" name="projectPrivacy" value="Private" required>
+            <label for="private">Private</label>
+
+            <label for="projectLogo">Project Logo/Image:</label>
+            <input type="file" id="projectLogo" name="projectLogo">
+
+            <label for="projectFiles">Project Files (e.g., documents):</label>
+            <input type="file" id="projectFiles" name="projectFiles[]" multiple>
+
+            <label for="projectCreator">Project Creator:</label>
+            <input type="text" id="projectCreator" name="projectCreator">
+
+            <label for="collaborators">Collaborators:</label>
+            <input type="text" id="collaborators" name="collaborators">
+
+            <label for="status">Status:</label>
+            <select id="status" name="status">
+                <option value="In Progress">In Progress</option>
+                <option value="Completed">Completed</option>
+            </select>
+            
+            <label for="dateCreated">Date Created:</label>
+<input type="date" id="dateCreated" name="dateCreated" value="<?php echo date('Y-m-d'); ?>" readonly>
+
+            
+        
+<button type="submit"> <a href="sorry.html">Create Project</a></button> 
+
+            
+        </form>
+    </main>
+    
+
+    <script>
+        
+        var dropdownMenu = document.getElementById("dropdown-menu");
+
+        function showDropdown() {
+            dropdownMenu.style.opacity = "1";
+            dropdownMenu.style.maxHeight = "200px"; 
+        }
+
+        function hideDropdown() {
+            dropdownMenu.style.opacity = "0";
+            dropdownMenu.style.maxHeight = "0";
+        }
+
+
+
+    </script>
+
+<footer>
+    <p>&copy; Copyright 2023 | OpenAstro Explorers</p>
+</footer>
+
+</body>
+</html>

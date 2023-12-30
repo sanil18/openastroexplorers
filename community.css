@@ -1,0 +1,260 @@
+body, h1, h2, h3, p, ul, li, a {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+.navbar {
+    background-color: #2e3e4e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 22px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+
+.nav-links a:hover {
+    color: #ff5733;
+}
+
+
+#projects-dropdown {
+    position: relative;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: -10px;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    border-radius: 4px;
+    width: 150px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#projects-dropdown:hover #dropdown-menu {
+    display: block;
+}
+
+#dropdown-menu li {
+    margin: 0;
+}
+
+#dropdown-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+
+#dropdown-menu a:hover {
+    background-color: #f2f2f2;
+    color: #555;
+}
+
+
+#community-section {
+    padding: 40px;
+    text-align: center;
+    background-color: #aeacac;
+}
+
+#community-section h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#community-section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #666;
+}
+
+
+.discussion-forums {
+    background-color: #ecbfbf;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.create-thread h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.create-thread form {
+    text-align: left;
+}
+
+.create-thread label,
+.create-thread textarea {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.create-thread input[type="text"],
+.create-thread textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.create-thread button {
+    background-color: #ff5733;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.create-thread button:hover {
+    background-color: #ff7843;
+}
+
+.webinars-workshops,
+.events-calendar,
+.community-blog {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.webinars-workshops h3,
+.events-calendar h3,
+.community-blog h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.webinars-workshops ul,
+.events-calendar ul,
+.community-blog ul {
+    list-style: none;
+    text-align: left;
+}
+
+.webinars-workshops ul li,
+.events-calendar ul li,
+.community-blog ul li {
+    margin-bottom: 20px;
+    color: #666;
+}
+
+
+.discord-channel {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.discord-channel h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.discord-channel p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: #ccc;
+}
+
+.discord-channel a {
+    background-color: #ff5733; 
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.discord-channel a:hover {
+    background-color: #ff7843; 
+}
+
+
+footer {
+    text-align: center;
+    background-color: #2e3e4e;
+    color: #fff;
+    padding: 10px 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.user-actions-message {
+    background-color: #f8f8f8;
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    margin: 20px auto; 
+    max-width: 600px; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+.user-actions-message p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin: 0;
+}
+
+

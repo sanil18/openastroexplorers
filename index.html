@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAstro Explorers</title>
+    <link rel="stylesheet" type="text/css" href="home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class="blurred-background"></div>
+ <div id="notice-overlay" class="overlay">
+     <div class="notice-box">
+         <h2>Important Notice</h2>
+         <p>Due to the current development status, some features may be limited. We appreciate your patience as we work on improvements. Click "OK" to proceed to the platform.</p>
+         <button id="notice-ok-btn">OK</button>
+    </div>
+</div>
+
+
+    <div class="fullscreen-video">
+        <video autoplay loop muted>
+            <source src="space_-_107991 (Original).mp4" type="video/mp4">
+        </video>
+
+        <div class="video-text-overlay">
+            <h1 class="welcome-message">Welcome to OpenAstro Explorers</h1>
+            <p class="mission-statement">Your cosmic gateway to open science and the wonders of space. Join us on a journey through the cosmos.</p>
+        </div>
+    </div>
+
+    <div class="content">
+        <header>
+            <h1 class="what-is-header">What is OpenAstro Explorers?</h1>
+        </header>
+        <div class="container">
+            <p>OpenAstro Explorers is your celestial portal to a universe of possibilities. We're on a cosmic mission to redefine the way we explore and unravel the vast wonders of space. Our journey commenced with a visionary goal - to democratize access to the marvels of the cosmos through the power of open science.</p>
+            <p>Founded by an impassioned assembly of space enthusiasts, OpenAstro Explorers embarked on its voyage with a simple yet profound concept: to unite scientists, researchers, and space aficionados from every corner of the world, fostering a spirit of collaboration that transcends borders. Our cosmic odyssey aims to make scientific exploration an endeavor accessible to all.</p>
+            <p>Join us at OpenAstro Explorers and become a part of our cosmic family dedicated to unlocking the enigmas of the cosmos. Your cosmic odyssey starts here, where the stars are merely the beginning.</p>
+            <p>For a deeper understanding of our mission and values, navigate to the "Our Mission" section in the navigation bar. We invite you to explore the principles that fuel our cosmic mission and guide our journey into the vast expanse of space.</p>
+        </div>
+    </div>
+
+   
+    <div class="background"></div>
+    <div class="project-description background-image">
+        <h1>What do we offer?</h1>
+        <p>OpenAstro Explorers is an exciting digital platform that's changing the game in how scientists, researchers, and space enthusiasts collaborate on open science projects. Our mission is to make science accessible and transparent to everyone, and here's what we bring to the table:</p>
+    
+        <h3 class="special-heading">Project Hub:</h3>
+        <p>Imagine a place where scientists can showcase their projects, detailing their goals, methods, and resource needs. OpenAstro Explorers provides a central space for these listings, making it easy to discover and get involved in exciting research.</p>
+    
+        <h2>What's in the store?</h2>
+        <div class="whats-in-store">
+            <div class="whats-in-store-item">
+                <h3>Enhanced Features</h3>
+                <p>We'll be rolling out advanced project management tools and even more ways to share data and resources.</p>
+            </div>
+            <div class="whats-in-store-item">
+                <h3>Mobile App</h3>
+                <p>Accessing our platform will be a breeze with our upcoming mobile app, ensuring you're connected to the world of open science, wherever you go.</p>
+            </div>
+            <div class="whats-in-store-item">
+                <h3>AI Matching</h3>
+                <p>Finding the perfect project to collaborate on will be made easier with AI recommendations.</p>
+            </div>
+            <div class="whats-in-store-item">
+                <h3>Global Reach</h3>
+                <p>We're not stopping here; we're gearing up for global outreach, optimizing our platform for scalability.</p>
+            </div>
+        </div>
+    
+        <p>In a nutshell, OpenAstro Explorers is your gateway to a world of open science. It's about collaboration, transparency, and making scientific research an inclusive endeavor for everyone, whether you're a scientist, educator, space enthusiast, or just curious about the wonders of our universe. Join us on this exciting journey!</p> <br>
+
+        <p>If you have any questions or concerns, please <a href="mailto:your-sanildulal187@gmail.com">click here to send us an email</a>.</p>
+    </div>
+    
+       
+
+    <div class="navbar">
+        <a class="logo" href="#">OpenAstro Explorers</a>
+
+        <div class="nav-links">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li id="projects-dropdown" onmouseover="showDropdown()" onmouseout="hideDropdown()">
+                    <a href="#">Projects</a>
+                    <ul id="dropdown-menu" class="dropdown-menu">
+                        <li><a href="project.html">View Project</a></li>
+                        <li><a href="create.html">Create Your Own</a></li>
+                    </ul>
+                </li>
+                <li><a href="funding.html">Funding</a></li>
+                <li><a href="resources.css">Resources</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="mission.html">Our Mission</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="sorry.html">Login/Register</a></li>
+            </ul>
+        </div>        
+</div>  
+
+<footer>
+    <p>&copy; Copyright 2023 | OpenAstro Explorers</p>
+  </footer>
+
+    <script>
+        var dropdownMenu = document.getElementById("dropdown-menu");
+
+        function showDropdown() {
+            dropdownMenu.style.opacity = "1";
+            dropdownMenu.style.maxHeight = "200px"; 
+        }
+
+        function hideDropdown() {
+            dropdownMenu.style.opacity = "0";
+            dropdownMenu.style.maxHeight = "0";
+        }
+
+
+        const noticeOverlay = document.getElementById("notice-overlay");
+const noticeOkBtn = document.getElementById("notice-ok-btn");
+
+function hideNotice() {
+    noticeOverlay.style.display = "none";
+    sessionStorage.setItem("noticeSeen", "true");
+}
+
+function hasNoticeBeenSeen() {
+    return sessionStorage.getItem("noticeSeen") === "true";
+}
+
+window.addEventListener("load", () => {
+    if (!hasNoticeBeenSeen()) {
+        noticeOverlay.style.display = "block";
+    }
+});
+
+noticeOkBtn.addEventListener("click", hideNotice);
+
+
+
+</script>
+</body>
+</html>
+

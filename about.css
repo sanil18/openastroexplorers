@@ -1,0 +1,139 @@
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+
+.container {
+    max-width: 800px; 
+    margin: 0 auto; 
+    padding: 20px; 
+    box-sizing: border-box; 
+}
+
+
+.navbar {
+    background-color: #2e3e4e;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0; 
+}
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nav-links ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.nav-links a:hover {
+    color: #ff5733;
+    transition: color 0.3s;
+}
+
+
+#projects-dropdown {
+    position: relative;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 20px;
+    left: -10px;
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    border-radius: 4px;
+    width: 150px;
+    text-align: center;
+}
+
+#projects-dropdown:hover #dropdown-menu {
+    display: block;
+}
+
+#dropdown-menu li {
+    margin: 0;
+}
+
+#dropdown-menu a {
+    display: block;
+    padding: 10px 0;
+    color: #000000;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+#dropdown-menu a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+    border-radius: 0;
+}
+
+
+#projects-dropdown #dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#projects-dropdown:hover #dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+footer {
+    text-align: center;
+    background-color: #2e3e4e;
+    color: #fff;
+    padding: 10px 0;
+}
+
+#welcome-section {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px;
+    text-align: center;
+    min-height: 70vh; 
+}
+
+#welcome-section h1 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+
+#welcome-section p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}

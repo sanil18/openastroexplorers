@@ -1,0 +1,458 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #000; 
+    color: #fff; 
+    text-align: center;
+}
+
+
+.fullscreen-video {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.fullscreen-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.image-section {
+    position: relative; 
+    width: 100%;
+    height: 100vh;
+    background-image: url('pexels-marko-obrvan-306344.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    z-index: 0; 
+}
+
+
+.image-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5; 
+    z-index: -1; 
+}
+
+
+.video-text-overlay {
+    position: absolute;
+    top: 80%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; 
+    font-family: 'Orbitron', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+
+.welcome-message {
+    font-size: 30px; 
+    color: #359396; 
+    margin-bottom: 10px;
+}
+
+
+.what-is-header {
+    font-size: 38px; 
+    color: #ffff00 !important;
+    margin-bottom: 20px;
+}
+
+.mission-statement {
+    font-size: 18px; 
+    font-family: 'Montserrat', sans-serif; 
+    white-space: nowrap; 
+}
+
+
+.content {
+    padding: 70px;
+    background-image: url('img/pexels-marko-obrvan-306344.jpg'); 
+    background-size: cover;
+    background-position: center;
+    color: #fff; 
+    text-align: center;
+    position: relative; 
+}
+
+
+header {
+    padding: 30px 0; 
+}
+
+h1 {
+    font-size: 44px;
+    color: #ffdd00;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.text-overlay {
+    position: absolute;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; 
+    font-family: 'Orbitron', sans-serif; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.welcome-message h1,
+.what-is-header {
+    font-size: 30px; 
+    color: #fffffe; 
+    margin-bottom: 10px;
+}
+
+
+.navbar {
+    background-color: transparent; 
+    padding: 20px; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 3; 
+}
+
+
+.logo {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    position: relative; 
+    transition: color 0.3s ease; 
+}
+
+.nav-links a::before {
+    content: "";
+    position: absolute;
+    bottom: -2px; 
+    left: 0;
+    width: 100%;
+    height: 2px; 
+    background-color: #fff; 
+    transform: scaleX(0); 
+    transform-origin: right; 
+    transition: transform 0.3s ease; 
+}
+
+.nav-links a:hover {
+    color: #e96f6f; 
+}
+
+.nav-links a:hover::before {
+    transform: scaleX(1); 
+    transform-origin: left; 
+}
+
+
+footer {
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    padding: 10px; 
+    font-family: 'Dancing Script', cursive; 
+    border-top: 2px solid #555; 
+    font-size: 16px; 
+  }
+  
+  
+  footer p {
+    margin: 0; 
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #ffffff; 
+    background: url('img/pexels-aleksandar-pasaric-1694000.jpg') no-repeat center center fixed; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+.project-description {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
+
+.project-description h2 {
+    color: #ffffff; 
+    text-align: center;
+}
+
+.project-description h3 {
+    color: #00a8e8; 
+    margin-top: 20px;
+}
+
+.project-description p {
+    color: #bbbbbb; 
+    line-height: 1.6;
+}
+
+.project-description ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.project-description ul li {
+    margin-bottom: 10px;
+}
+
+.project-description strong {
+    font-weight: bold;
+}
+
+
+.project-description .list-item:hover {
+    background-color: rgba(0, 0, 0, 0.8); 
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.project-description .flex-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.project-description .header-bg {
+    background: rgba(0, 47, 108, 0.8); 
+    color: #ffffff;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+
+.project-description .footer {
+    background-color: rgba(0, 47, 108, 0.8); 
+    color: #ffffff; 
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+
+.project-description .whats-in-store {
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.project-description .whats-in-store-item {
+    flex: 1;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #444444; 
+    border-radius: 5px;
+}
+
+
+.project-description .whats-in-store-item:hover {
+    background-color: rgba(0, 0, 0, 0.9); 
+    transform: scale(1.05); 
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.4); 
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+nav {
+    background-color: #333;
+    color: #fff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+#projects-dropdown {
+    position: relative;
+    font-family: "Arial", sans-serif;
+}
+
+#dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 20px; 
+    left: -10px; 
+    background-color: #fff;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    border-radius: 4px;
+    width: 150px; 
+    text-align: center; 
+}
+
+#projects-dropdown:hover #dropdown-menu {
+    display: block;
+}
+
+#dropdown-menu li {
+    margin: 0;
+}
+
+#dropdown-menu a {
+    display: block;
+    padding: 10px 0; 
+    color: #000000; 
+    text-decoration: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+
+#dropdown-menu a:hover {
+    background-color: #f2f2f2; 
+    color: #333;
+    border-radius: 0; 
+}
+
+#projects-dropdown #dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+#projects-dropdown:hover #dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.blurred-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("img/pexels-dana-tentis-370799.jpg"); 
+    background-size: cover;
+    filter: blur(10px); 
+    z-index: 1;
+    display: none; 
+}
+
+
+#notice-overlay {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.9); 
+    padding: 20px;
+    text-align: center;
+    z-index: 2;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    display: none; 
+}
+
+.notice-box h2 {
+    font-size: 24px;
+    color: #333; 
+}
+
+.notice-box p {
+    font-size: 16px;
+    color: #555; 
+    margin-bottom: 20px;
+}
+
+#notice-ok-btn {
+    background-color: #007bff; 
+    color: #fff; 
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#notice-ok-btn:hover {
+    background-color: #0056b3; 
+}

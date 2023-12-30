@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Register - OpenAstro Explorers</title>
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome to OpenAstro Explorers</h1>
+        <h3>Your cosmic gateway to open science</h3>
+    </header>
+    
+    <main>
+        <section class="form-container">
+            <div class="form-toggle">
+                <button id="login-toggle" class="active">Login</button>
+                <button id="register-toggle">Register</button>
+            </div>
+
+            <form id="login-form" class="active">
+                <h2>Login</h2>
+                <div class="input-container">
+                    <label for="login-username">Username or Email:</label>
+                    <input type="text" id="login-username" required>
+                </div>
+                <div class="input-container">
+                    <label for="login-password">Password:</label>
+                    <input type="password" id="login-password" required>
+                </div>
+                <button type="submit"> <a href="sorry.html">Login</a></button> 
+                <a href="#" class="forgot-password">Forgot Password?</a>
+                <div class="social-login">
+                    <p>Or, login with:</p> <br>
+                   
+                    <a href="#" class="google-login">
+                        <img src="img/gooogoo.jpg" alt="Google Login">
+                        Google
+                    </a>
+
+                    <a href="#" class="facebook-login">
+                        <img src="img/facebook-logo-2019.png" alt="Facebook Login">
+                        Facebook
+                    </a>
+                </div>
+            </form>
+
+            <form id="register-form">
+                <h2>Register</h2>
+                <div class="input-container">
+                    <label for="register-username">Username:</label>
+                    <input type="text" id="register-username" required>
+                </div>
+                <div class="input-container">
+                    <label for="register-email">Email:</label>
+                    <input type="email" id="register-email" required>
+                </div>
+                <div class="input-container">
+                    <label for="register-password">Password:</label>
+                    <input type="password" id="register-password" required>
+                </div>
+                <div class="password-strength">
+                    <p>Password Strength:</p>
+                    <div class="strength-bar">
+                        <div class="strength-indicator" id="weak"></div>
+                        <div class="strength-indicator" id="medium"></div>
+                        <div class="strength-indicator" id="strong"></div>
+                    </div>
+                </div>
+                <div class="input-container">
+                    <label for="register-confirm-password">Confirm Password:</label>
+                    <input type="password" id="register-confirm-password" required>
+                </div>
+                <button type="submit"> <a href="sorry.html">Register</a></button> 
+                <div class="error-message"></div>
+                <div class="social-login">
+                    <p>Or, register with:</p> <br>
+                
+                    <a href="#" class="google-login">
+                        <img src="img/gooogoo.jpg" alt="Google Login">
+                        Google
+                    </a>
+
+                    <a href="#" class="facebook-login">
+                        <img src="img/facebook-logo-2019.png" alt="Facebook Login">
+                        Facebook
+                    </a>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>By registering, you agree to our <a href="terms.html">Terms of Service</a> and <a href="Privacy.html">Privacy Policy.</a></p> 
+    </footer> <br>
+
+   
+    
+    <footer class="copyright">
+        <p>&copy; Copyright 2023 | OpenAstro Explorers</p>
+    </footer>
+</body>
+</html>
